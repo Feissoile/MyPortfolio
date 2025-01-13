@@ -10,15 +10,23 @@
     </style>
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#skills" class="nav-link">Mes compétences</a>
+        <a href="#projects" class="nav-link">Mes projets</a>
+      </nav>
+    </header>
     <div class="slider">
-      <img src="img/templates/cyberpunk.jpg" class="slider-background" />
-      <div class="slider-content">
-        <h1>Ali Feissoile</h1>
-        <p>Développeur Web Fullstack</p>
+      <div class="slider-background">
+        <div class="slider-content">
+          <h1 class="color-name">Ali Feissoile</h1>
+          <p class="title-color">Développeur Web Fullstack</p>
+        </div>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="about">
       <div class="boxed">
         <div class="flex">
           <div class="w40">
@@ -41,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="section dark">
+    <div class="section dark" id="skills">
       <div class="boxed text-center">
         <h2 class="text-center">Mes compétences</h2>
         <div class="flex gap20">
@@ -67,17 +75,27 @@
             />
             <h3>React</h3>
           </div>
-          
         </div>
       </div>
     </div>
 
-
-    <div class="section">
+    <div class="section" id="projects">
       <div class="boxed text-center">
         <h2>Mes projets</h2>
       </div>
     </div>
   </body>
-  <script src="js/app.js"></script>
+  <script src="js/app.js">
+         const navLinks = document.querySelectorAll('.nav-link');
+         navLinks.forEach(link => {
+          link.addEventListener('click', function (event) {event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+        });
+      });
+    });
+  </script>
 </html>
