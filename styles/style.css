@@ -15,6 +15,30 @@ body {
   font-style: normal;
 }
 
+.navbar {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgb(255, 234, 0); 
+  padding: 15px 20px; 
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: black; 
+  text-decoration: none; 
+  font-size: 18px; 
+  font-weight: bold; 
+  margin: 0 20px; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
 .slider {
   width: 100%;
   min-height: 80vh;
@@ -71,6 +95,8 @@ p {
 
 .section {
   padding: 100px 0;
+  color: black;
+  background-color: rgb(230, 220, 39);
 }
 
 .boxed {
