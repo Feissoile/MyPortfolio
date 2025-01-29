@@ -126,14 +126,54 @@ p {
   display: flex;
 }
 
-.dark {
-  background: black;
-  color: #fff;
+.yellow {
+  background-color: rgb(255, 234, 0);
+  color: black;
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.backend-radius {
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;*/
+  padding: 20px;
+  border-radius: 10px;
+  /*position: relative;*/
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 50%;
+  padding-right: -1000px;
+}
+
+.text-left {
+  width: 100px;
+  text-align: center;
+  margin-right: 1000px;
+  padding-bottom: 500px;
+}
+
+.flex-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30%;
 }
 
 .w40 {
   width: 40%;
 }
+
 .image-profil {
   width: 250px;
   height: 250px;
@@ -145,14 +185,6 @@ p {
   overflow: hidden;
   margin: 0 auto;
 }
-
-/*.radius {
-    background-color: aquamarine;
-    border-radius: 10000px;
-    margin-bottom: 50%;
-    height: px;
-    justify-content: center;
-}*/
 
 .w60 {
   width: 60%;
@@ -175,11 +207,11 @@ p {
 }
 
 .skill {
-  background-color: #333;
+  background-color: transparent;
   border-radius: 15px;
-  padding-left: 20px;
-  margin-left: 20px;
+  padding-right: 1000px;
   box-sizing: border-box;
+  margin-bottom: 1px;
 }
 
 .skill img {
@@ -191,10 +223,12 @@ p {
 
 .skill h3 {
   margin-top: 10px;
+  margin-left: 15px;
 }
 
-.javascript {
+.nodeJS {
   width: 70%;
+  
 }
 
 .html {
@@ -208,6 +242,3 @@ p {
 .react {
   width: 100%;
 }
-
-/*h3 {
-}*/
